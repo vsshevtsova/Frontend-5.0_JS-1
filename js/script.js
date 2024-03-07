@@ -17,7 +17,7 @@
 
 "use strict";
 
-let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", " ");
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
 let personalMovieDB = {
   count: numberOfFilms,
@@ -26,8 +26,12 @@ let personalMovieDB = {
   genres: false,
 };
 
-let film = prompt("Один из последних просмотренных фильмов?", " ");
-let rate = +prompt("На сколько оцените его?", " ");
-
+let film = prompt("Один из последних просмотренных фильмов?");
+let rate = +prompt("На сколько оцените его?");
 personalMovieDB.movies[film] = rate;
+
+film = prompt("Один из последних просмотренных фильмов?");
+rate = +prompt("На сколько оцените его?");
+personalMovieDB.movies[film] = rate;
+
 console.log(personalMovieDB);
