@@ -29,5 +29,5 @@ let personalMovieDB = {
 let film = prompt("Один из последних просмотренных фильмов?", " ");
 let rate = +prompt("На сколько оцените его?", " ");
 
-personalMovieDB.movies[`"${film}"`] = `${rate}`;
+personalMovieDB.movies[film] = rate;
 console.log(personalMovieDB);
